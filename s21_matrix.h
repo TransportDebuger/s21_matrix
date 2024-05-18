@@ -3,23 +3,23 @@
 
 #include <stdlib.h>
 
-//result codes
+// result codes
 #define RES_OK 0
 #define RES_INCORRECT_MATRIX 1
 #define RES_CALC_ERROR 2
 
-//matrix comparison result codes
+// matrix comparison result codes
 #define SUCCESS 1
 #define FAILURE 0
 
-//matrix compare precision
+// matrix compare precision
 #define EQ_PRECISE 1e-7
 
-//matrix type definition
+// matrix type definition
 typedef struct matrix_struct {
-    double** matrix;
-    int rows;
-    int columns;
+  double **matrix;
+  int rows;
+  int columns;
 } matrix_t;
 
 int s21_create_matrix(int rows, int columns, matrix_t *result);
